@@ -21,6 +21,9 @@ plugins=(
     archive
     extract
     git
+    colored-man-pages
+    colorize
+    zsh-syntax-highlighting
 )
 
 # Environment variables.
@@ -34,14 +37,14 @@ source ~/.zsh/setopt.zsh
 
 # Aliases.
 source ~/.aliases
-source ~/.aliases_private
+# source ~/.aliases_private
 
 # Functions.
 source ~/.functions
-source ~/.functions_private
+# source ~/.functions_private
 
 # Tracks your most used directories, based on frecency with z.
-source ~/.zsh/plugins/z/z.sh
+# source ~/.zsh/plugins/z/z.sh
 
 # dircolors.
 if [ -x "$(command -v dircolors)" ]; then
@@ -62,3 +65,6 @@ fi
 if [ -f ~/.local/bin/base16-oxide ]; then
     source ~/.local/bin/base16-oxide
 fi
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
