@@ -36,5 +36,5 @@ alias disk='df -h | grep sd \
 alias alu='apt list --upgradable'
 alias preview='fzf --height=50% --layout=reverse --preview="bat --color=always {}"'
 
-# Shortcuts
-alias cat='bat'
+alias please='sudo'
+alias mistress='systemctl'
